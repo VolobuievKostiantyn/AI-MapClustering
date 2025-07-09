@@ -19,7 +19,7 @@ def generate_random_gps(center, radius_km=1):
     return (lat, lon)
 
 # Step 2: Simulated incoming GPS points
-def simulate_gps_data(n=50, center=(37.7749, -122.4194)):
+def simulate_gps_data(n=50, center=(37.7750, -122.4190)):
     return [generate_random_gps(center) for _ in range(n)]
 
 # Step 3: Perform KMeans clustering
